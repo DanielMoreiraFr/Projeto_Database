@@ -1,0 +1,17 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>C:\Users\morei\.m2\repository</localRepository>
+    <proxies>
+        <proxy>
+            <id>optional</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>proxy.example.com</host>
+            <port>80</port>
+            <username>proxyuser</username>
+            <password>somepassword</password>
+            <nonProxyHosts>local.net|.example.com</nonProxyHosts>
+        </proxy>
+    </proxies>
+</settings>

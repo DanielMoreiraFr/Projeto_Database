@@ -1,0 +1,120 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-05-27 01:52:53 #1 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is opened by 16040@DESKTOP-F4UPQUQ
+
+[2025-05-27 01:52:53 #2 store] 
+Configuration path: ?
+
+[2025-05-27 01:52:53 #3 type] 
+Type model.DimTempo is not enhanced.
+
+[2025-05-27 01:52:53 #4 type] 
+Type model.DimProduto is not enhanced.
+
+[2025-05-27 01:52:53 #5 type] 
+Type model.FatoVenda is not enhanced.
+
+[2025-05-27 01:52:53 #6 query] 
+Error during query execution: SELECT v FROM FatoVenda v JOIN FETCH v.tempo JOIN FETCH v.produto(null)
+
+[2025-05-27 01:52:53 #7 *] 
+java.lang.NullPointerException: Cannot invoke "com.objectdb.o.FPL.f(com.objectdb.o.UTY)" because "this.f" is null
+	at com.objectdb.o.LDR.c(LDR.java:1197)
+	at com.objectdb.o.LDR.r(LDR.java:1295)
+	at com.objectdb.o.LDR.Z9(LDR.java:1263)
+	at com.objectdb.o.SRB.a(SRB.java:165)
+	at com.objectdb.o.QRR.h(QRR.java:565)
+	at com.objectdb.o.QRR.i(QRR.java:225)
+	at com.objectdb.jpa.JpaQuery.getResultList(JpaQuery.java:677)
+	at app.MainDois.main(MainDois.java:44)
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-05-27 02:04:54 #1 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' has been recovered (tr. 1-6)
+
+[2025-05-27 02:04:54 #2 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is opened by 15928@DESKTOP-F4UPQUQ
+
+[2025-05-27 02:04:54 #3 store] 
+Configuration path: ?
+
+[2025-05-27 02:04:54 #4 type] 
+Type model.DimTempo is not enhanced.
+
+[2025-05-27 02:04:54 #5 type] 
+Type model.DimProduto is not enhanced.
+
+[2025-05-27 02:04:54 #6 type] 
+Type model.FatoVenda is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-05-27 02:08:15 #1 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is opened by 9504@DESKTOP-F4UPQUQ
+
+[2025-05-27 02:08:15 #2 store] 
+Configuration path: ?
+
+[2025-05-27 02:08:15 #3 type] 
+Type model.DimTempo is not enhanced.
+
+[2025-05-27 02:08:15 #4 type] 
+Type model.DimProduto is not enhanced.
+
+[2025-05-27 02:08:15 #5 type] 
+Type model.FatoVenda is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-05-27 02:19:20 #1 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is opened by 13744@DESKTOP-F4UPQUQ
+
+[2025-05-27 02:19:20 #2 store] 
+Configuration path: ?
+
+[2025-05-27 02:19:35 #3 type] 
+Type model.DimTempo is not enhanced.
+
+[2025-05-27 02:19:35 #4 type] 
+Type model.DimProduto is not enhanced.
+
+[2025-05-27 02:19:35 #5 type] 
+Type model.FatoVenda is not enhanced.
+
+[2025-05-27 02:19:40 #6 query] 
+Error during query execution: SELECT v FROM FatoVenda v JOIN FETCH v.tempo JOIN FETCH v.produto(null)
+
+[2025-05-27 02:19:40 #7 *] 
+java.lang.NullPointerException: Cannot invoke "com.objectdb.o.FPL.f(com.objectdb.o.UTY)" because "this.f" is null
+	at com.objectdb.o.LDR.c(LDR.java:1197)
+	at com.objectdb.o.LDR.r(LDR.java:1295)
+	at com.objectdb.o.LDR.Z9(LDR.java:1263)
+	at com.objectdb.o.SRB.a(SRB.java:165)
+	at com.objectdb.o.QRR.h(QRR.java:565)
+	at com.objectdb.o.QRR.i(QRR.java:225)
+	at com.objectdb.jpa.JpaQuery.getResultList(JpaQuery.java:677)
+	at app.MainInterativo.listarVendas(MainInterativo.java:99)
+	at app.MainInterativo.main(MainInterativo.java:37)
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-05-27 02:24:19 #1 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is opened by 19184@DESKTOP-F4UPQUQ
+
+[2025-05-27 02:24:19 #2 store] 
+Configuration path: ?
+
+[2025-05-27 02:24:31 #3 type] 
+Type model.DimTempo is not enhanced.
+
+[2025-05-27 02:24:31 #4 type] 
+Type model.DimProduto is not enhanced.
+
+[2025-05-27 02:24:31 #5 type] 
+Type model.FatoVenda is not enhanced.
+
+[2025-05-27 02:25:41 #6 store] 
+Database 'C:\Users\morei\Desktop\humberto\ BancoDados\varejo.odb' is closed by 19184@DESKTOP-F4UPQUQ
+

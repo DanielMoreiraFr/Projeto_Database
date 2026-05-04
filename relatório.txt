@@ -1,0 +1,125 @@
+CENTRO UNIVERSITÁRIO UNINASSAU
+Curso de Ciência da Computação - Turma 3MB
+Alunos:
+ - Daniel Moreira
+ - George Washington
+ - Mycael Barbosa
+ - Gabriel Lopes
+ - João Lucas Barbosa
+
+---
+
+**RELATÓRIO TÉCNICO**
+
+**Sistema de Análise de Dados de Varejo Multimodelo**
+
+**Projeto Final - Disciplina: Banco de Dados Aplicado**
+
+---
+
+**1. OBJETIVO DO PROJETO**
+
+O presente projeto tem como objetivo desenvolver um sistema de análise de dados de varejo utilizando múltiplos modelos de bancos de dados. Foram integradas as tecnologias PostgreSQL (modelo relacional para Data Warehouse), ObjectDB (modelo objeto-relacional) e MongoDB (modelo de documentos para dados não estruturados). Além disso, foram utilizadas FastAPI para exposição de uma API REST e Streamlit para criação de um dashboard interativo. O projeto visa demonstrar a aplicação prática e a integração entre diferentes paradigmas de banco de dados.
+
+**2. TECNOLOGIAS UTILIZADAS**
+
+* **Backend**: FastAPI
+* **Data Warehouse**: PostgreSQL
+* **Banco Objeto-Relacional**: ObjectDB (com Java + JPA)
+* **Banco de Dados Não Estruturados**: MongoDB (com PyMongo)
+* **Dashboard**: Streamlit
+* **Controle de Versão**: Git e GitHub
+
+**3. ETAPAS DE DESENVOLVIMENTO**
+
+**Semana 1 - Planejamento e Modelagem**:
+
+* Definição do escopo e objetivos;
+* Modelagem das tabelas: dim\_tempo, dim\_produto e fato\_venda;
+* Escolha dos bancos: PostgreSQL, MongoDB e ObjectDB.
+
+**Semana 2 - Implementação dos Bancos de Dados**:
+
+* PostgreSQL: Criação do esquema estrela e inserção de dados fictícios;
+* MongoDB: Armazenamento de comentários de clientes;
+* ObjectDB: CRUD com entidades Java (DimTempo, DimProduto, FatoVenda).
+
+**Semana 3 - OLAP e Data Mining**:
+
+* PostgreSQL: Consultas OLAP por mês e categoria;
+* Python: Clustering com scikit-learn e previsão com ARIMA.
+
+**Semana 4 - Finalização e Documentação**:
+
+* CRUD interativo com Scanner (Java);
+* Dashboard com Streamlit;
+* Criação de documentação e organização do repositório.
+
+**4. DESAFIOS ENFRENTADOS E SOLUÇÕES ADOTADAS**
+
+* **ObjectDB**: Problemas de compilação resolvidos com ajustes no `pom.xml` e `persistence.xml`;
+* **Git/GitHub**: Reconfiguração do repositório com `git remote` e `git push -u`;
+* **Chave primária duplicada**: Resolvido com `@GeneratedValue` nas entidades JPA;
+* **Comunicação entre bancos**: Tratamento de exceções e configuração de conexões.
+
+**5. RESULTADOS OBTIDOS**
+
+**5.1 Arquitetura do Projeto**
+
+```
+sistema-analise-varejo/
+├── backend/                  # API REST com FastAPI
+│   ├── main.py
+│   └── requirements.txt
+├── data-warehouse/           # PostgreSQL
+│   └── scripts/
+│       ├── schema.sql
+│       └── insert_data.sql
+├── mongodb/                  # Dados não estruturados
+│   └── connect.py
+├── objectdb/                 # Banco objeto-relacional
+│   ├── src/
+│   │   ├── DimTempo.java
+│   │   ├── DimProduto.java
+│   │   └── FatoVenda.java
+│   ├── pom.xml
+│   └── lib/
+│       └── objectdb.jar
+├── datamining/               # Data Mining
+│   ├── clustering.py
+│   └── forecast.py
+├── dashboard/                # Interface visual
+│   └── app.py
+├── documentation/            # Documentação
+│   ├── manual_usuario.md
+│   └── relatorio_tecnico.md
+└── README.md
+```
+
+**5.2 Funcionalidades Implementadas**
+
+* OLAP com PostgreSQL;
+* CRUD com ObjectDB;
+* Armazenamento de comentários com MongoDB;
+* API REST integradora;
+* Dashboard interativo com Streamlit;
+* Clustering e previsão de vendas.
+
+**6. APRENDIZADOS E CONSIDERAÇÕES FINAIS**
+
+Durante a execução deste projeto, foi possível adquirir conhecimento sobre integração de bancos de dados heterogênos, análise de dados multidimensionais e aplicação de técnicas de data mining. Além disso, desafios como erros de compilação em Java e configuração de repositórios Git foram superados com soluções técnicas adequadas.
+
+**Melhorias Futuras**:
+
+* Interface gráfica com JavaFX ou frontend em React;
+* Geração de relatórios automáticos com JasperReports;
+* Uso de Spark ou Pandas para análise de grandes volumes de dados;
+* Criação de cubos OLAP com funcionalidades de drill-down.
+
+**7. REPOSITÓRIO GITHUB**
+
+O código-fonte do projeto está hospedado em: [https://github.com/DanelMof/Projeto\_Database](https://github.com/DanelMof/Projeto_Database)
+
+**8. CONCLUSÃO**
+
+O projeto "Sistema de Análise de Dados de Varejo Multimodelo" foi desenvolvido com sucesso, alcançando os objetivos propostos e possibilitando uma visão prática da integração de diferentes modelos de bancos de dados. A documentação completa e o repositório estruturado garantem a reprodutibilidade do sistema.
